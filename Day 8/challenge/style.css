@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.background {
+  background-color: #23424a;
+  color: white;
+  padding: 100px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  /* display: flex => flex container */
+  display: flex;
+  /* default = row */
+  flex-direction: row;
+
+  font-family: "Roboto Black" sans-serif;
+  /* can't use yet - Actually it's supported right now, so we can use it */
+  /* gap: 100px; */
+}
+
+.row h2 {
+  font-size: 36px;
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+/*Gap can be used instead*/
+/*Selects col that has col sibling before it (in HTML)*/
+.col + .col {
+  margin-left: 30px;
+}
+
+.text {
+  width: 60%;
+}
+
+.text p {
+  margin-bottom: 3em;
+}
+
+.three-col {
+  padding: 3em 0;
+  text-align: center;
+}
+
+.three-col-title {
+  color: #87629a;
+}
+
+.two-col {
+  background-color: #136c72;
+  color: white;
+  padding: 3em 0;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #38cfd9;
+
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+  color: #23424a;
+
+  border-radius: 100px;
+
+  /* margin-top: 40px; */
+  padding: 0.75em 2em;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.75;
+}
